@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h3 id="title">Nhân Đẹp Trai</h3>
+      <br />
+      <input value="123" class="form-control w-100" id="txt" />
+      <br />
+      <input value="1000000" class="form-control w-100" id="number" />
+      <br />
+      <button onclick="sayHello()" id="btn" class="btn btn-danger w-50">
+        SayHello
+      </button>
+      <br />
+      <br />
+      <div class="w-25">
+        <img class="w-100" src="./img/SHIN.jpg" alt="" id="hinh1" />
+      </div>
+      <br />
+      <!-- VD1 -->
+      <div class="form-group">
+        <p>VD1: Nhập Vào 1 Giá Trị và In Giá Trị</p>
+        <input class="form-control w-30" id="nhapGiaTri" />
+        <br />
+        <button
+          onclick="hienThi()"
+          id="btnHienThi"
+          class="btn btn-success w-50"
+        >
+          Hiển Thị
+        </button>
+        <div class="text-info mt-3">
+          Kết Quả: <span id="hienThiKetQua"></span>
+        </div>
+        <br />
+        <div id="text"></div>
+      </div>
+      <!-- VD2 -->
+      <div class="form-group">
+        <h3>VD2: Nhập Lương 1 giờ và số giờ làm <br />=> Tính Tổng Lương</h3>
+        <div class="form-group">
+          <p>Tiền Lương 1h</p>
+          <input type="text" class="form-control w-25" id="tienLuong1H" />
+        </div>
+        <div class="form-group">
+          <p>Số Giờ Làm</p>
+          <input type="text" class="form-control w-25" id="soGioLam" />
+        </div>
+        <button onclick="tinhTien()" class="btn btn-success mt-3">
+          Tính Tiền
+        </button>
+        <div class="alert alert-success mt-3 w-25">
+          Kết Quả: <span id="hienThiKetQuaVD2"></span>
+        </div>
+      </div>
+      <!-- VD3: XỮ LÝ ĐĂNG NHẬP HIỂN THỊ ACCOUNT & PASS Ở RESULT -->
+      <div class="form-group bg-primary w-50">
+        <h3 class="text-center bg-dark text-white">Đăng Nhập</h3>
+        <div class="form-group bg-primary d-flex">
+          <h4 class="m-3">Tài Khoản:</h4>
+          <input id="account" type="text" class="form-control w-75" />
+        </div>
+        <div class="form-group bg-primary d-flex mt-3">
+          <h4 class="m-3">Mật Khẩu:</h4>
+          <input id="pass" type="password" class="form-control w-75" />
+        </div>
+        <div class="text-center mt-3">
+          <button class="btn btn-success w-25 fs-5" id="btnLogin">
+            Đăng Nhập
+          </button>
+        </div>
+        <div class="alert alert-primary" id="result"></div>
+      </div>
+      <!-- VD4: TÍNH TIỀN TIPS -->
+      <div id="VD4">
+        <h3 class="text-center">TÍNH TIỀN TIPS</h3>
+        <div class="form-group">
+          <h5>Tổng Tiền Thanh Toán</h5>
+          <input id="tongTien" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <h5>Phần Trăm Tips</h5>
+          <select id="phanTramTips" class="form-control">
+            <option value="30">30% - Tuyệt</option>
+            <option value="20">20% - Tốt</option>
+            <option value="15">15% - Tạm Ổn</option>
+            <option value="10">10% - Tồi</option>
+            <option value="5">5% - Thật Tệ</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h5>Số Người Tips</h5>
+          <input id="soNguoiTip" type="text" class="form-control" />
+        </div>
+        <div class="mt-3">
+          <button id="btnTinhTien" class="btn btn-success">LỤM TIỀN</button>
+        </div>
+        <div class="alert alert-success mt-3">
+          <p>
+            Số Tiền Tips Của Mỗi Người:
+            <span id="soTienTipMoiNguoi"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
