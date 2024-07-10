@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container mb-5">
+      <div class="mt-2">
+        <!-- VÍ DỤ 1: TÍNH TRỊ TUYỆT ĐỐI CỦA 1 SỐ -->
+        <h3>TÍNH GIÁ TRỊ TUYỆT ĐỐI CỦA 1 SỐ</h3>
+        <div class="form-group">
+          <p>Nhập vào 1 số bất kì</p>
+          <input type="text" id="i_So1" class="form-control w-25" />
+        </div>
+        <button id="btnVD1" class="btn btn-success mt-2">
+          Tính trị tuyệt đối
+        </button>
+        <div class="form-group">
+          <p class="mt-2 alert alert-success" id="result1"></p>
+        </div>
+        <br />
+        <!-- VÍ DỤ 2: NHẬP VÀO 1 SỐ, CHO RA KẾT QUẢ CHẲN - LẺ-->
+        <h3>NHẬP VÀO 1 SỐ, CHO RA KẾT QUẢ CHẲN - LẺ</h3>
+        <div class="form-group">
+          <p>Nhập vào 1 số bất kì</p>
+          <input type="text" id="i_So2" class="form-control w-25" />
+        </div>
+        <button id="btnVD2" class="btn btn-success mt-2">
+          Tính trị tuyệt đối
+        </button>
+        <div class="form-group">
+          <p class="mt-2 alert alert-success" id="result2"></p>
+        </div>
+        <!-- BÀI TẬP 1: NHẬP ĐIỂM TRUNG BÌNH > 5 => ĐẬU VÀ NGƯỢC LẠI-->
+        <h3>BÀI TẬP 1: NHẬP ĐIỂM TRUNG BÌNH > 5 => ĐẬU VÀ NGƯỢC LẠI</h3>
+        <div class="form-group">
+          <p>Nhập số điểm</p>
+          <input type="text" id="i_Score" class="form-control w-25" />
+        </div>
+        <button id="btnScore" class="btn btn-success mt-2">Ra Kết Quả</button>
+        <div class="form-group">
+          <p class="mt-2 alert alert-success" id="resultScore">Kết quả:</p>
+        </div>
+        <!-- BÀI TẬP 2: NHẬP VÀO 2 SỐ VÀ IN RA KẾT QUẢ SỐ LỚN HƠN-->
+        <h3>BÀI TẬP 2: NHẬP VÀO 2 SỐ VÀ IN RA KẾT QUẢ SỐ LỚN HƠN-</h3>
+        <div class="form-group d-flex">
+          <div style="margin-right: 30px">
+            <p>Nhập số bất kì 1</p>
+            <input type="text" id="i_One" class="form-control" />
+          </div>
+          <div>
+            <p>Nhập số bất kì 2</p>
+            <input type="text" id="i_Two" class="form-control" />
+          </div>
+        </div>
+        <button id="btnNumber" class="btn btn-success mt-2">Ra Kết Quả</button>
+        <div class="form-group">
+          <p class="mt-2 alert alert-success" id="resultNumber">Kết quả:</p>
+        </div>
+        <!-- BÀI TẬP 3: TÍNH TIỀN CÔNG DỰA THEO SỐ GIỜ LÀM-->
+        <h3>BÀI TẬP 3: TÍNH TIỀN CÔNG DỰA THEO SỐ GIỜ LÀM</h3>
+        <p class="alert alert-danger">
+          <span
+            >Nếu số giờ làm <span> <= </span> 40: Tiền Công bằng số giờ làm *
+            tiền công 1 giờ</span
+          >
+          <br />
+          <span
+            >Nếu số giờ làm > 40: Tiền công bằng: 40 * tiền công 1 giờ + ( số
+            giờ làm - 40)*tiền công 1 giờ * 1.5
+          </span>
+        </p>
+        <div class="form-group">
+          <p>Nhập vào số giờ làm trong tuần</p>
+          <input type="text" id="soGioLam" class="form-control w-25" />
+        </div>
+        <div class="form-group">
+          <p>Tiền Công trên 1 giờ</p>
+          <input type="text" id="tienCong" class="form-control w-25" />
+        </div>
+        <button class="btn btn-outline-success mt-2" id="btnTinhTien">
+          Tính Tiền
+        </button>
+        <p id="resultTien" class="alert alert-success mt-3"></p>
+      </div>
+      <!-- BÀI TẬP 4: TÍNH ĐIỂM TRUNG BÌNH 3 MÔN -> XẾP LOẠI -->
+      <h3>BÀI TẬP 4: TÍNH ĐIỂM TRUNG BÌNH 3 MÔN -> XẾP LOẠI</h3>
+      <div class="alert alert-danger">
+        <p>Xếp loại được tính điểm trung bình</p>
+        <span>Từ 0 < dưới 5 => Không Đạt</d></span> <br>
+        <span>Từ >=5 đến < 8 => Đạt</span><br>
+        <span>Từ >=8 đến 10 => Giỏi</span>
+      </div>
+      <div class="form-group row">
+        <div class="col-4">
+          <p> Nhập Điểm Môn 1:</p>
+          <input id="diem1" type="text" class="form-control ">
+        </div>
+        <div class="col-4">
+          <p> Nhập Điểm Môn 2:</p>
+          <input id="diem2" type="text" class="form-control ">
+        </div>
+        <div class="col-4">
+          <p> Nhập Điểm Môn 3:</p>
+          <input id="diem3" type="text" class="form-control ">
+        </div>
+        <div class="form-group mt-3">
+          <button id="btnTinhDiem" class="btn btn-success">Xếp Loại</button>
+        </div>
+        <div class="form-group mt-3">
+          <p class="alert alert-success" id="resultDiem"></p>
+        </div>
+      </div>
+      <!-- VÍ DỤ SWITCH CASE -->
+      <h3> VÍ DỤ SWITCH CASE</h3>
+      <div class="form-group">
+        <p>Nhập vào 1 số bất kì</p>
+        <input type="text" id="soSC" class="form-control w-25" />
+      </div>
+      <button id="btnSC" class="btn btn-success mt-2">
+        ĐỌC SỐ
+      </button>
+      <div class="form-group">
+        <p class="mt-2 alert alert-success" id="resultSC"></p>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
