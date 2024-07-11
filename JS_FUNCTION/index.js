@@ -98,9 +98,9 @@ document.getElementById("btnReduce").onclick = function () {
 // BÀI TẬP 2: ZOOM TEXT
 
 document.getElementById("btnPlus2").onclick = function () {
-  // // =========== DÙNG FUNCTION RETURN 1
-  // var tagID = domID("txtOne");
-  // // ở đơn vị fontsize đang là chuỗi có chữ px => phải làm mất chữ px thì mới cộng đơn vị number được. dưới dây là cách thực hiện => *1 để thực hiện phép tính
+  // =========== DÙNG FUNCTION RETURN 1
+  var tagID = domID("txtOne");
+  // ở đơn vị fontsize đang là chuỗi có chữ px => phải làm mất chữ px thì mới cộng đơn vị number được. dưới dây là cách thực hiện => *1 để thực hiện phép tính
   // var fontSize = tagID.style.fontSize.replace("px", "") * 1;
   // tagID.style.fontSize = fontSize + 2 + "px";
   // console.log("🚀 ~ fontSize:", fontSize);
