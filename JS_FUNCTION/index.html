@@ -8,6 +8,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -27,6 +35,231 @@
         <section id="theS" class="alert alert-danger"></section>
         <h4 id="theH" class="alert alert-warning"></h4>
       </div>
+      <!-- VÍ DỤ DÙNG HÀM FUNCTION RETURN -->
+      <div class="container">
+        <div class="VD1 row justify-content-between mb-5">
+          <h1 class="text text-center mb-3">VÍ DỤ DÙNG HÀM FUNCTION RETURN</h1>
+          <h2 class="text text-center mb-5">
+            TÍNH ĐIỂM TRUNG BÌNH 3 MÔN CỦA 2 KHỐI A & C
+          </h2>
+          <div class="col-4 form-group">
+            <p class="alert alert-danger w-25 text-center">Khối A</p>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-outline-danger"
+                  type="button"
+                  id="button-addon1"
+                >
+                  Điểm Toán
+                </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="diemToan"
+                  placeholder="Nhập Điểm Toán"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-outline-danger"
+                  type="button"
+                  id="button-addon1"
+                >
+                  Điểm Lý
+                </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="diemLy"
+                  placeholder="Nhập Điểm Lý"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-outline-danger"
+                  type="button"
+                  id="button-addon1"
+                >
+                  Điểm Hóa
+                </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="diemHoa"
+                  placeholder="Nhập Điểm Hóa"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+              <div class="form-group mt-5">
+                <div class="input-group mb-3">
+                  <button
+                    class="btn btn-outline-danger"
+                    type="button"
+                    id="button-addon1"
+                  >
+                    Điểm Trung Bình Khối A
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="diemTrungBinhA"
+                    placeholder="Điểm Trung Bình"
+                    aria-label="Example text with button addon"
+                    aria-describedby="button-addon1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 form-group">
+            <p class="alert alert-success w-25 text-center">Khối C</p>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-outline-success"
+                  type="button"
+                  id="button-addon1"
+                >
+                  Điểm Văn
+                </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="diemVan"
+                  placeholder="Nhập Điểm Văn"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-outline-success"
+                  type="button"
+                  id="button-addon1"
+                >
+                  Điểm Sử
+                </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="diemSu"
+                  placeholder="Nhập Điểm Sử"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-outline-success"
+                  type="button"
+                  id="button-addon1"
+                >
+                  Địa
+                </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="diemDia"
+                  placeholder="Nhập Điểm Địa"
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+              <div class="form-group mt-5">
+                <div class="input-group mb-3">
+                  <button
+                    class="btn btn-outline-success"
+                    type="button"
+                    id="button-addon1"
+                  >
+                    Điểm Trung Bình Khối C
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="diemTrungBinhC"
+                    placeholder="Điểm Trung Bình"
+                    aria-label="Example text with button addon"
+                    aria-describedby="button-addon1"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button id="btnDTB" class="btn btn-warning">Tính Điểm</button>
+          </div>
+        </div>
+        <hr />
+        <div class="BT1-2 text-center mb-5">
+          <div class="BT1">
+            <h3>
+              BÀI TẬP 1: XÂY DỰNG CHỨC NĂNG ZOOM IN & ZOOM OUT CHO 2 BUTTON BÊN
+              DƯỚI
+            </h3>
+            <div
+              class="container justify-content-center form-group d-flex align-items-center"
+            >
+              <i
+                id="iconOne"
+                class="fab fa-xbox me-3"
+                style="font-size: 150px"
+              ></i>
+              <button
+                id="btnPlus"
+                type="button"
+                class="btn btn-outline-success me-2"
+              >
+                <i class="fa fa-angle-up"></i>
+              </button>
+              <button
+                id="btnReduce"
+                type="button"
+                class="btn btn-outline-success"
+              >
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </div>
+          </div>
+          <hr />
+          <div class="BT2">
+            <h3>
+              BÀI TẬP 2: XÂY DỰNG CHỨC NĂNG ZOOM IN & ZOOM OUT CHO ĐOẠN TEXT BÊN
+              DƯỚI
+            </h3>
+            <div class="container text-center">
+              <p id="txtOne" style="font-size: 20px">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In hic
+                sint officia dolorem quaerat sit, velit rem doloremque numquam
+                perferendis provident quas quod fugit veniam dicta molestiae
+                iusto autem porro blanditiis incidunt quis ab maxime fugiat
+                voluptate. Iste quia excepturi accusamus dolor ex, pariatur
+                voluptatibus. Enim maxime error inventore nemo.
+              </p>
+              <button
+                id="btnPlus2"
+                type="button"
+                class="btn btn-outline-success me-2"
+              >
+                <i class="fa fa-angle-up"></i>
+              </button>
+              <button
+                id="btnReduce2"
+                type="button"
+                class="btn btn-outline-success"
+              >
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -40,6 +273,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="./common/method.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
